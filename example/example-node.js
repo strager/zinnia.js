@@ -1,7 +1,13 @@
-var zinnia = require('./lib/zinnia');
+var path = require('path');
 
-zinnia.loadFromFile(process.argv[2], function (err, recognizer) {
+var zinnia = require('../lib/zinnia');
+
+var modelFilename = process.argv[2] || path.join(__dirname, 'ja-hiragana.model');
+
+zinnia.model.loadFromFile(modelFilename, function (err, model) {
     if (err) throw err;
+
+    var recognizer = zinnia.recognizer.fromModel(model);
 
     var character = {
         width: 300,
