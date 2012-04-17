@@ -1,0 +1,11 @@
+{
+    "author": "Matt Glazar <strager.nds@gmail.com> (http://strager.net/)",
+    "name": "zinnia.js",
+    "description": "Character regonizer; port of Zinnia",
+    "version": "0.0.0",
+    "dependencies": {
+    },
+    "engines": {
+        "node": "*"
+    }
+}
