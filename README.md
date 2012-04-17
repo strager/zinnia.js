@@ -6,8 +6,7 @@ Port of [Zinnia][zinnia] to JavaScript.
 
 ## TODO
 
- * Make compatible with web browsers.
-    * Module (AMD/CJS/global), `Buffer`, `require('fs')`
+ * AMD support.
  * Used typed arrays for memory and speed efficiency.
  * Unit tests.  Nah...
  * Port Learning and sexpr code.
